@@ -82,12 +82,5 @@ input
       .logo {
         width: 60%;
       }
-      .question input{
-        font-size: 12px;
-      }
-	.container {
-      max-width: 1170px;
-      margin: 0px auto;
-	height: 100vh;
-    }
+     
     }
