@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lasaco Inhouse</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="container">
+
+    <div class="header">
+      <div class="logo">
+        <img src="./img/Lasaco_logo_small.png" alt="Lasaco Assurance PLC" width="100%">
+       </div> 
+        <h1>Event Feedback</h1>
+    </div>
+    <form id="contact-form">
+        <ol>
+            <div class="question">
+                <li>
+                <div class="experience"><label for="experience">Is this your first experience outing with lasaco</label>
+                    <div>
+                      <input type="radio" id="yes" name="experience" value="yes"><label for="yes">Yes</label>
+                      <input type="radio" id="no" name="experience" value="no"><label for="no">No</label>
+                    </div>
+                  </div>
+                  <div>
+                    <textarea class="product-text" id="info" title="Any comment on the above" placeholder="How was the Event"></textarea>
+                  </div>
+                </li>
+              <li>
+                <div class="Overall"><label for="Overall">Overall, How would you rate the Event</label><br>
+                  <input type="radio" id="excellent" name="rating" value="excellent"><label for="excellent">Excellent</label><br>
+                  <input type="radio" id="very-good" name="rating" value="very-good"><label for="very-good">Very-Good</label><br>
+                  <input type="radio" id="good" name="rating" value="good"><label for="good">Good</label><br>
+                  <input type="radio" id="fair" name="rating" value="fair"><label for="fair">Fair</label><br>
+                  <input type="radio" id="poor" name="rating" value="poor"><label for="poor">Poor</label>
+                </div>
+              </li>
+              <li>
+                <div class=""><label for="aboutEvent">What do you like about the Event</label><br>
+                  <textarea class="product-text" id="info2" title="Any comment on the above" placeholder="what do you like about the Event"></textarea>
+                </div>
+              </li>
+              <li>
+                <div class="improvement"><label for="improvement">Is there anything else you would like to Share about the Event</label> </div>
+                <div>
+                  <textarea class="product-text" id="info3" title="Any comment on the above" placeholder="what do you like about the Event"></textarea>
+                </div>
+              </li>
+            </div>
+        </ol>
+        <button type="submit" id="submit" class="btn">Send</button>
+       <p id="alert-msg">Message sent successfully!</p>
+    </form>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+         <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+    <!-- Script -->
+        <script src="./js/script.js"></script>
+  </body>
+</html>
